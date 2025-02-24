@@ -1,6 +1,6 @@
 function getFlightSchedule() {
-    let departureCode = document.getElementById('departure').value;
-    let arrivalCode = document.getElementById('arrival').value;
+    let departureCode = document.getElementById('departure').value.toUpperCase();
+    let arrivalCode = document.getElementById('arrival').value.toUpperCase();
     let accessKey = '366ca90a7f99cbbeb5fafc0bf6c1d816';
     
     if (!departureCode || !arrivalCode) {
